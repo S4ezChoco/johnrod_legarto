@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Johnrod Legarto - BSIT Student at Pamantasan ng Lungsod ng Valenzuela (PLV). Web Developer and IT Professional.">
+  <meta name="keywords" content="Johnrod Legarto, Portfolio, Web Developer, BSIT, PLV, Valenzuela">
+  <meta name="author" content="Johnrod Legarto">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Johnrod Legarto | Portfolio">
+  <meta property="og:description" content="BSIT Student at Pamantasan ng Lungsod ng Valenzuela. Passionate about web development and technology.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/johnrod_formal_pic.jpg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  
+  <title>John Rod Legarto | Portfolio</title>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="header__logo">JL</a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav__link active">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#portfolio" class="nav__link">Portfolio</a>
+        <a href="#experience" class="nav__link">Experience</a>
+        <a href="#internship" class="nav__link">Internship</a>
+        <a href="#education" class="nav__link">Education</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="theme-toggle__icon theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="overlay" id="overlay"></div>
+  <nav class="nav-mobile" id="navMobile">
+    <button class="nav-mobile__close" id="navClose" aria-label="Close menu">&times;</button>
+    <a href="#home" class="nav-mobile__link">Home</a>
+    <a href="#about" class="nav-mobile__link">About</a>
+    <a href="#skills" class="nav-mobile__link">Skills</a>
+    <a href="#portfolio" class="nav-mobile__link">Portfolio</a>
+    <a href="#experience" class="nav-mobile__link">Experience</a>
+    <a href="#internship" class="nav-mobile__link">Internship</a>
+    <a href="#education" class="nav-mobile__link">Education</a>
+    <a href="#contact" class="nav-mobile__link">Contact</a>
+  </nav>
+
+  <main>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+      <div class="hero__decoration hero__decoration--1"></div>
+      <div class="hero__decoration hero__decoration--2"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            <span class="hero__badge-text">Available for opportunities</span>
+          </div>
+          <h1 class="hero__title">
+            Hi, I'm <span style="color: var(--color-accent);">John Rod Legarto</span>
+          </h1>
+          <p class="hero__subtitle">
+            BSIT Student seeking opportunities for professional development. Passionate about programming, graphic design, and creating innovative digital solutions that make a difference.
+          </p>
+          <div class="hero__actions">
+            <a href="#portfolio" class="btn btn--primary">View My Work</a>
+            <a href="assets/documents/Legarto_Resume.pdf" target="_blank" class="btn btn--secondary">View Resume</a>
+            <a href="#contact" class="btn btn--secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <div class="hero__image-wrapper">
+            <img src="assets/images/johnrod_formal_pic.jpg" alt="John Rod Legarto" class="hero__image-slide active" id="heroImage1" />
+            <img src="assets/images/johnrod_fav_icon.jpg" alt="John Rod Legarto" class="hero__image-slide" id="heroImage2" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge__dot"></span>
+            <span class="section-badge__text">About Me</span>
+          </div>
+          <h2 class="section-header__title">Know Me Better</h2>
+          <p class="section-header__subtitle">
+            A dedicated IT student passionate about building innovative solutions
+          </p>
+        </div>
+
+        <div class="about__inner">
+          <div class="about__image">
+            <div class="about__image-wrapper">
+              <img src="assets/images/johnrod_formal_pic.jpg" alt="John Rod Legarto" />
+            </div>
+          </div>
+          <div class="about__content">
+            <p class="about__text">
+              Hello! I'm <strong>John Rod Legarto</strong>, a 22-year-old Bachelor of Science in Information Technology student at <strong>Pamantasan ng Lungsod ng Valenzuela (PLV)</strong>. Born and raised in Valenzuela City, I have a strong passion for technology, programming, and creative design.
+            </p>
+            <p class="about__text">
+              I'm seeking a responsible position with opportunities for professional development, where I can utilize my strengths while continuously growing in the tech industry. My journey has equipped me with diverse skills including programming, graphic design, video editing, and expert typing skills with 90 WPM.
+            </p>
+            <p class="about__text">
+              With hands-on experience from my internship at Food Machinery Industrial Corporation and seasonal work at Concentrix, I bring both technical expertise and real-world customer service skills. I believe in continuous learning and delivering quality results in every project I undertake.
+            </p>
+
+            <div class="about__highlights">
+              <div class="about__highlight">
+                <span class="about__highlight-number" id="projectsCount">10+</span>
+                <span class="about__highlight-label">Projects Completed</span>
+              </div>
+              <div class="about__highlight">
+                <span class="about__highlight-number" id="skillsCount">15+</span>
+                <span class="about__highlight-label">Skills Acquired</span>
+              </div>
+              <div class="about__highlight">
+                <span class="about__highlight-number">3+</span>
+                <span class="about__highlight-label">Years Learning</span>
+              </div>
+              <div class="about__highlight">
+                <span class="about__highlight-number">∞</span>
+                <span class="about__highlight-label">Passion for Tech</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge__dot"></span>
+            <span class="section-badge__text">My Skills</span>
+          </div>
+          <h2 class="section-header__title">Technical Expertise</h2>
+          <p class="section-header__subtitle">
+            Technologies and tools I work with
+          </p>
+        </div>
+
+        <div class="skills__grid" id="skillsGrid">
+          <!-- Skills will be populated by JavaScript -->
+          <!-- Fallback content -->
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">HTML5</h3>
+            <span class="skill-card__level">Advanced</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">CSS3</h3>
+            <span class="skill-card__level">Advanced</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">JavaScript</h3>
+            <span class="skill-card__level">Intermediate</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                <path d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.523-.29-1.047-.29zM12 5.688C5.373 5.688 0 8.514 0 12s5.373 6.313 12 6.313S24 15.486 24 12c0-3.486-5.373-6.312-12-6.312zm-3.26 7.451c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164H5.357l-.327 1.681H3.652l1.23-6.326h2.65c.797 0 1.378.209 1.744.628.366.418.476 1.002.33 1.752a2.836 2.836 0 0 1-.305.847c-.143.255-.33.49-.561.703zm4.024.715l.543-2.799c.063-.318.039-.536-.068-.651-.107-.116-.336-.174-.687-.174H11.46l-.704 3.625H9.388l1.23-6.327h1.367l-.327 1.682h1.218c.767 0 1.295.134 1.586.401s.378.7.263 1.299l-.572 2.944h-1.389zm7.597-2.265a2.782 2.782 0 0 1-.305.847c-.143.255-.33.49-.561.703a2.44 2.44 0 0 1-.917.551c-.336.108-.765.164-1.286.164h-1.18l-.327 1.682h-1.378l1.23-6.326h2.649c.797 0 1.378.209 1.744.628.366.417.477 1.001.331 1.751z"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">PHP</h3>
+            <span class="skill-card__level">Intermediate</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12c6.627 0 12-5.373 12-12S18.627 0 12 0zm-.041 3.615h1.103l.127 1.267h.036c.382-.782 1.11-1.397 2.257-1.397 1.453 0 2.376.957 2.376 2.82v5.31h-1.103V6.614c0-1.267-.596-1.878-1.562-1.878-1.11 0-1.979.829-1.979 2.096v4.783h-1.103V3.615h-.152zm-5.927.273h3.443c1.398 0 2.399.72 2.399 2.114 0 1.212-.72 1.969-1.69 2.241l1.908 3.372H10.89l-1.69-3.063H7.31v3.063H6.207V3.888h-.175zm1.103.992v2.713h2.259c.829 0 1.361-.438 1.361-1.356 0-.92-.532-1.357-1.361-1.357H7.135z"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Java</h3>
+            <span class="skill-card__level">Intermediate</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Tailwind CSS</h3>
+            <span class="skill-card__level">Intermediate</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                <path d="M12.89 3L14.85 3.35L11.11 21L9.15 20.65L12.89 3M19.59 12L16 8.41V5.58L22.42 12L16 18.41V15.58L19.59 12M1.58 12L8 5.58V8.41L4.41 12L8 15.58V18.41L1.58 12Z"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Git / GitHub</h3>
+            <span class="skill-card__level">Intermediate</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                <path d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.153zM5.77 18.695h-.927a50.854 50.854 0 00-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 00-.195 4.41H0c.055-1.966.192-3.81.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095c.242 2.015.384 3.86.428 5.53zm4.017-4.08c-.378 2.045-.876 3.533-1.492 4.46-.482.72-1.01 1.08-1.583 1.08-.16 0-.36-.04-.6-.12v-.7c.135.022.27.04.405.04.324 0 .61-.14.86-.42.31-.34.465-.775.465-1.3 0-.333-.124-.838-.37-1.515l-.99-2.9h.96l.72 2.404c.147.472.247.877.297 1.215.15-.42.35-1.005.6-1.757l.546-1.862h.91zm11.313 4.08h-.934a50.854 50.854 0 00-.27-4.41h-.007l-1.41 4.41h-.704l-1.4-4.41h-.01a72.892 72.892 0 00-.194 4.41h-.818c.054-1.966.19-3.81.41-5.53h1.148l1.335 4.064h.007l1.347-4.064h1.095c.24 2.015.382 3.86.427 5.53zm-8.436 0h-.77c0-.943-.186-1.666-.557-2.17-.372-.503-.947-.755-1.725-.755h-.337v2.925h-.785v-5.53h1.55c1.803 0 2.705.965 2.705 2.895 0 .705-.166 1.295-.5 1.77a.92.92 0 00.073.134c.13.236.328.412.596.527.27.115.62.173 1.053.173h.123v.63c-.16.06-.346.09-.56.09-.397 0-.733-.093-1.01-.28-.277-.186-.466-.467-.566-.842h-.036c-.24.747-.77 1.12-1.59 1.12-.55 0-1.01-.155-1.38-.465-.37-.31-.62-.697-.747-1.163h-.01c.04.323.07.74.1 1.25zm-.2-2.715c0-.476-.098-.867-.294-1.173-.196-.306-.52-.46-.97-.46h-.428v3.207h.243c.53 0 .907-.153 1.133-.46.227-.306.34-.7.34-1.177zm.547-4.99c.078.078.177.117.298.117.125 0 .225-.04.302-.12.077-.08.115-.18.115-.305 0-.125-.038-.227-.115-.307a.403.403 0 00-.302-.12.404.404 0 00-.298.12c-.08.08-.12.182-.12.307s.04.226.12.308zm.64.05c-.124.126-.277.19-.46.19-.183 0-.336-.064-.46-.19-.125-.126-.187-.28-.187-.462 0-.183.062-.337.186-.463.125-.126.278-.19.46-.19.184 0 .337.064.46.19.126.126.19.28.19.463 0 .183-.064.336-.19.462z"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">MySQL</h3>
+            <span class="skill-card__level">Intermediate</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                <path d="M5 3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5zm2 6h10v2H7V9zm0 4h10v2H7v-2z"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Figma</h3>
+            <span class="skill-card__level">Intermediate</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO SECTION ===== -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge__dot"></span>
+            <span class="section-badge__text">Portfolio</span>
+          </div>
+          <h2 class="section-header__title">My Recent Projects</h2>
+          <p class="section-header__subtitle">
+            A collection of projects I've worked on during my studies
+          </p>
+        </div>
+
+        <div class="portfolio__empty">
+          <div class="portfolio__empty-icon">
+            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+              <polyline points="13 2 13 9 20 9"></polyline>
+              <line x1="12" y1="18" x2="12" y2="12"></line>
+              <line x1="9" y1="15" x2="15" y2="15"></line>
+            </svg>
+          </div>
+          <h3 class="portfolio__empty-title">Projects Coming Soon</h3>
+          <p class="portfolio__empty-text">
+            I'm currently working on exciting projects that will be showcased here soon. Stay tuned for updates on my latest work in web development, design, and programming!
+          </p>
+          <div class="portfolio__empty-badge">
+            <span class="portfolio__empty-badge-dot"></span>
+            <span class="portfolio__empty-badge-text">In Development</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== JOB EXPERIENCE SECTION ===== -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge__dot"></span>
+            <span class="section-badge__text">Work Experience</span>
+          </div>
+          <h2 class="section-header__title">Professional Journey</h2>
+          <p class="section-header__subtitle">
+            Real-world experience in customer service and IT support
+          </p>
+        </div>
+
+        <div class="experience__content">
+          <div class="experience__card">
+            <div class="experience__header">
+              <div class="experience__info">
+                <h3 class="experience__position">Customer Service Representative</h3>
+                <p class="experience__company">Concentrix (Seasonal)</p>
+                <p class="experience__duration">October 2024 - April 2025</p>
+                <p class="experience__department">Retail & Credit - Voice Account</p>
+              </div>
+            </div>
+
+            <div class="experience__description">
+              <p>Provided exceptional customer service in a fast-paced retail and credit environment, handling voice communications with professionalism and efficiency. Developed strong communication skills and problem-solving abilities while managing customer inquiries and concerns.</p>
+            </div>
+
+            <div class="experience__skills">
+              <h4 class="experience__subtitle">Key Responsibilities</h4>
+              <ul class="experience__list">
+                <li>Handled customer inquiries and resolved issues efficiently</li>
+                <li>Maintained high customer satisfaction ratings</li>
+                <li>Processed retail and credit transactions accurately</li>
+                <li>Collaborated with team members to achieve department goals</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INTERNSHIP SECTION ===== -->
+    <section class="internship" id="internship">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge__dot"></span>
+            <span class="section-badge__text">Internship Experience</span>
+          </div>
+          <h2 class="section-header__title">Professional Training</h2>
+          <p class="section-header__subtitle">
+            Hands-on experience in the IT industry
+          </p>
+        </div>
+
+        <div class="internship__content" id="internshipContent">
+          <div class="internship__card">
+            <div class="internship__header">
+              <div class="internship__logo">
+                <img src="assets/images/FMIC_LOGO.jpg" alt="Food Machinery Industrial Corporation" />
+              </div>
+              <div class="internship__info">
+                <h3 class="internship__position" id="internshipPosition">IT Tech</h3>
+                <p class="internship__company" id="internshipCompany">Food Machinery Industrial Corporation</p>
+                <p class="internship__duration" id="internshipDuration">June 2025 - October 2025</p>
+                <p class="internship__hours">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span id="internshipHours">486 Hours</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="internship__description" id="internshipDescription">
+              <p>Gained hands-on experience in IT support, system maintenance, and technical troubleshooting in an industrial manufacturing environment.</p>
+            </div>
+
+            <div class="internship__skills">
+              <h4 class="internship__subtitle">Skills Developed</h4>
+              <div class="internship__tags" id="internshipSkills">
+                <span class="internship__tag">Technical Support</span>
+                <span class="internship__tag">System Maintenance</span>
+                <span class="internship__tag">Hardware Troubleshooting</span>
+                <span class="internship__tag">Network Configuration</span>
+              </div>
+            </div>
+
+            <div class="internship__achievements">
+              <h4 class="internship__subtitle">Key Achievements</h4>
+              <ul class="internship__list" id="internshipAchievements">
+                <li>Completed 486 hours of intensive IT training</li>
+                <li>Provided technical support for manufacturing systems</li>
+                <li>Assisted in network infrastructure maintenance</li>
+                <li>Developed problem-solving skills in real-world scenarios</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section class="education" id="education">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge__dot"></span>
+            <span class="section-badge__text">Education</span>
+          </div>
+          <h2 class="section-header__title">Academic Background</h2>
+          <p class="section-header__subtitle">
+            My educational journey in Information Technology
+          </p>
+        </div>
+
+        <div class="education__timeline" id="educationTimeline">
+          <div class="education__item">
+            <span class="education__year">2022 - 2026</span>
+            <h3 class="education__degree">Bachelor of Science in Information Technology</h3>
+            <p class="education__school">Pamantasan ng Lungsod ng Valenzuela (PLV)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact__centered">
+          <div class="section-badge">
+            <span class="section-badge__dot"></span>
+            <span class="section-badge__text">Get In Touch</span>
+          </div>
+          <h2 class="contact__title">Let's Connect</h2>
+          <p class="contact__text">
+            Have a project in mind or want to collaborate? Feel free to reach out through any of the platforms below.
+          </p>
+
+          <!-- Contact Links Grid -->
+          <div class="contact__links-grid">
+            <!-- Email -->
+            <a href="mailto:johnrod.legarto50@gmail.com" class="contact__link-card">
+              <div class="contact__link-icon contact__link-icon--email">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <span class="contact__link-label">Email</span>
+              <span class="contact__link-value">johnrod.legarto50@gmail.com</span>
+            </a>
+
+            <!-- Mobile -->
+            <a href="tel:+639219888504" class="contact__link-card">
+              <div class="contact__link-icon contact__link-icon--phone">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <span class="contact__link-label">Mobile</span>
+              <span class="contact__link-value">+63 921 988 8504</span>
+            </a>
+
+            <!-- Facebook -->
+            <a href="#" class="contact__link-card" target="_blank" rel="noopener noreferrer">
+              <div class="contact__link-icon contact__link-icon--facebook">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </div>
+              <span class="contact__link-label">Facebook</span>
+              <span class="contact__link-value">Johnrod Legarto</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="#" class="contact__link-card" target="_blank" rel="noopener noreferrer">
+              <div class="contact__link-icon contact__link-icon--linkedin">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <span class="contact__link-label">LinkedIn</span>
+              <span class="contact__link-value">Connect with me</span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="#" class="contact__link-card" target="_blank" rel="noopener noreferrer">
+              <div class="contact__link-icon contact__link-icon--github">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+              <span class="contact__link-label">GitHub</span>
+              <span class="contact__link-value">View my repos</span>
+            </a>
+
+            <!-- Instagram -->
+            <a href="#" class="contact__link-card" target="_blank" rel="noopener noreferrer">
+              <div class="contact__link-icon contact__link-icon--instagram">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+              <span class="contact__link-label">Instagram</span>
+              <span class="contact__link-value">@johnrod.legarto</span>
+            </a>
+
+            <!-- Location -->
+            <div class="contact__link-card contact__link-card--static">
+              <div class="contact__link-icon contact__link-icon--location">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <span class="contact__link-label">Location</span>
+              <span class="contact__link-value">Valenzuela City, Philippines</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copyright">
+        &copy; <span id="currentYear">2025</span> Johnrod Legarto. All rights reserved.
+      </p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
+        <a href="#" class="social-link" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="#" class="social-link" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <!-- JavaScript Files - Business Logic First (following rules.md) -->
+  <script src="js/utils/constants.js"></script>
+  <script src="js/utils/validators.js"></script>
+  <script src="js/utils/formatters.js"></script>
+  <script src="js/utils/themeManager.js"></script>
+  <script src="js/services/portfolioService.js"></script>
+  <script src="js/services/skillsService.js"></script>
+  <script src="js/services/contactService.js"></script>
+  <script src="js/services/educationService.js"></script>
+  <script src="js/services/internshipService.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
